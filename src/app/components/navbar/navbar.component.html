@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon>restaurant</mat-icon>
+    </button>
+    <h1>Recetario</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/accounts'"> Recetas </a>
+      <a mat-button [routerLink]="'/create-contact'"> Tus recetas </a>
+      <a mat-button [routerLink]="'/create-account'"> Planificador </a>
+      <a mat-button [routerLink]="'/contacts'"> Lista de la compra </a>
+    </div>
+    <span class="example-spacer"></span>
+      <mat-icon>account_circle</mat-icon>
+      <a mat-button [routerLink]="'/activities'"> Login </a>
+  </mat-toolbar-row>
+
+</mat-toolbar>
