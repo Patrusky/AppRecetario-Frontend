@@ -1,21 +1,40 @@
 <div class="recipe-continer">
-  <mat-grid-list cols="3" rowHeight="3:1">
+  <mat-grid-list cols="3" rowHeight="3:1" class="title-continer">
     <mat-grid-tile colspan="3" rowspan="1">
       <h1>RECETAS</h1>
     </mat-grid-tile>
-    <mat-grid-tile cols="3" rowHeight="3:3">
-      <div>
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="300" class="card-container">
+    <mat-grid-tile *ngFor="let recipe of recipes">
+      <div >
         <mat-card class="example-card">
           <mat-card-title-group>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>rations</mat-card-subtitle>
+            <mat-card-title>{{recipe.name}}</mat-card-title>
+            <mat-card-subtitle><b>Raciones:</b>  {{recipe.rations}}/pers</mat-card-subtitle>
             <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
           </mat-card-title-group>
           <mat-card-content>
-            description
+            <h2>Descripción</h2>
+            {{recipe.description}}
+          </mat-card-content>
+          <mat-card-content>
+            <h2>Elaboración:</h2>
+            {{recipe.elaboration}}
           </mat-card-content>
         </mat-card>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
+<!-- <div *ngFor="let recipe of recipes">
+  <mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{recipe.name}}</mat-card-title>
+      <mat-card-subtitle>{{recipe.rations}}</mat-card-subtitle>
+      <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+    </mat-card-title-group>
+    <mat-card-content>
+      {{recipe.description}}
+    </mat-card-content>
+  </mat-card>
+</div> -->
