@@ -1,0 +1,23 @@
+.yourRecipe-continer{
+  padding: 50px;
+}
+.yourRecipe-continer h1{
+  text-align: center;
+
+}
+.yourRecipe-continer .example-card{
+  text-align: left;
+  padding: 20px;
+  margin: 25px;
+  min-height: 700px;
+  min-width: 400px;
+  max-width: 600px;
+}
+.yourRecipe-continer .card-container{
+  padding: 20px;
+  margin: 30px;
+  margin-bottom:100px ;
+}
+.yourRecipe-continer mat-form-field{
+  width: 100%;
+}
